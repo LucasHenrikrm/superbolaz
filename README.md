@@ -8,7 +8,7 @@
 
 ## 📄 Descrição
 Este projeto de loja virtual foi elaborado como uma **Atividade da Disciplina de Desenvolvimento Web I do Curso de Desenvolvimento de Softwares Multiplataforma**.
-O objetivo principal dele é praticar e aplicar todo o conteúdo aprendido ao longo da matéria como HTML5, CSS3, utilizados para estruturar e estilizar o site, JavaScript 
+O objetivo principal dele é praticar e aplicar todo o conteúdo aprendido ao longo da matéria como HTML5, CSS3, utilizados para estruturar e estilizar o site, JavaScript, JSON, para criar elementos dinâmicos, Bootstrap e Flexbox.
 
 ---
 ### 💻 Disciplina
