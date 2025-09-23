@@ -1,0 +1,84 @@
+/* ARQUIVO CSS GLOBAL/DE ESTILO */
+
+body {
+    background-color: #10276F;
+    margin: 0;
+    padding: 0;
+    /* IMPORTANTE: Adiciona um espaço no topo da página para que o conteúdo
+       do <main> não fique escondido atrás do header fixo.
+       Ajuste o valor 80px para a altura real do seu header. */
+    padding-top: 80px; 
+}
+
+header {
+    background-color: #F2541B;
+    color: #0D0D0D;
+    
+    /* PROPRIEDADES DO HEADER FIXO */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Garante que ocupe 100% da largura da tela */
+    z-index: 1000; /* Garante que o header fique na frente de outros elementos */
+
+    /* Alinhando o container que está dentro dele */
+    display: flex;
+    align-items: center;
+}
+
+/* Regra para o container DENTRO do header */
+/* Precisamos recriar as regras de flex aqui, pois o header agora é o container flex principal */
+header .container-fluid {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+main {
+    padding-top: 30px;
+}
+
+#logo {
+    display:flex;
+    justify-content: start;
+}
+
+
+.entrar {
+    display:flex;
+    justify-content: end;
+    gap:15px;
+}
+#bt-entrar {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #EFC978;
+    color: #0D0D0D;
+    width: 120px;
+    border-radius: 15px;
+    text-align: center;
+    place-content: center; /* Dica: use display: grid; para place-content funcionar ou use display:flex; e align-items/justify-content */
+    display: flex; /* Adicionado para centralizar melhor o texto */
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; /* Remove o sublinhado do link */
+    font-weight: bold;
+}
+#user-icon {
+    max-width: 100px;
+    border-radius: 50%;
+}
+
+.links {
+    /* Centraliza os links no espaço disponível */
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adiciona um espaço entre os links */
+}
+
+/* Estilos globais para links */
+a, a:visited {
+    color: #0D0D0D;
+}
+
