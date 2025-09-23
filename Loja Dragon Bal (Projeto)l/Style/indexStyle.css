@@ -1,1 +1,69 @@
 /* Arquivo CSS para estilizar a página index.html*/
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 120px;
+    row-gap: 20px;  
+}
+.card {
+    width: 300px;
+    height: 400px;
+    border-radius: 15px;
+    margin-top: 100px;
+    background-color: orangered;
+    box-shadow: rgb(121, 6, 2) 0px 20px 30px -10px;
+}
+
+.imagem {
+    display: flex;
+    justify-content: center;
+}
+
+.foto {
+    width: 250px;
+    height: 180px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+.titulo {
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-size: 25px;
+    font-family: "Asimovian", sans-serif;
+}
+
+.descricao {
+    font-family: "Asimovian", sans-serif;
+    color: white;
+    font-weight: 300;
+    text-align: center;
+    font-size: 15px;
+}
+
+.btn {
+    padding: 10px 30px;
+    font-family: "Asimovian", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 10px;
+    border: none;
+    transition: 1s;
+    background-color: black;
+    color: white;
+}
+
+.btn:hover {
+    transition: 1s;
+    background-color: rgba(3, 3, 135, 0.92);
+    color: white;
+    cursor: pointer;
+
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    margin-top: 4px;
+}
