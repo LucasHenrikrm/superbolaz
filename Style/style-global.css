@@ -1,0 +1,84 @@
+/* ARQUIVO CSS GLOBAL/DE ESTILO */
+
+body {
+    background-color: #10276F;
+    margin: 0;
+    padding: 0;
+    padding-top: 80px; 
+}
+
+header {
+    background-color: #F2541B;
+    color: #0D0D0D;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+    display: flex;
+    align-items: center;
+    height: 80px;
+    padding: 0 1rem; /* Adiciona um respiro nas laterais */
+}
+
+header .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+main {
+    padding-top: 30px;
+}
+
+.logo img {
+    height: 80px; /* Controla o tamanho do logo */
+    width: auto;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Aumenta o espaço entre os links */
+}
+
+.entrar {
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+}
+
+.btn-entrar {
+    background-color: #EFC978;
+    color: #0D0D0D;
+    font-weight: bold;
+    padding: 0.5rem 1.25rem;
+    border-radius: 15px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-entrar:hover {
+    background-color: #F2F2F2; 
+    color: #F2541B; 
+    border-color: #F2541B;
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#user-icon {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+a {
+    color: #0D0D0D;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FFFFFF; /* Adiciona um efeito hover nos links do menu */
+}

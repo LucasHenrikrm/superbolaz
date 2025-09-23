@@ -1,0 +1,6 @@
+Fundo - #10276F
+Barra menu - #F2541B
+Botoes/detalhes - #EFC978
+texto produtos - #F2F2F2
+Texto menu - #0D0D0D
+Locais de preencher com informação - #F2C1B6
