@@ -46,7 +46,7 @@ function handleLogin() {
   const resultado = login(usuarioInput, senhaInput);
 
   if (resultado === true) {
-    window.location.href = 'index.html';
+    window.location.href = '../Public/index.html';
   } else {
     alert(resultado);
     
