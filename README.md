@@ -1,7 +1,5 @@
-# superbolaz
-
 # 🛒 Atividade 1 - Loja virtual com temática do Dragon Ball
-## 🔗 Acesse a versão final da loja: [GokuStore]().
+### 🔗 Acesse a versão final da loja: [SuperBolaZ]().
 
 ## 📄 Descrição
 Este projeto de loja virtual foi elaborado como uma **Atividade da Disciplina de Desenvolvimento Web I do Curso de Desenvolvimento de Softwares Multiplataforma**.
