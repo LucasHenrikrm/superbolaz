@@ -4,32 +4,26 @@ body {
     background-color: #10276F;
     margin: 0;
     padding: 0;
-    /* IMPORTANTE: Adiciona um espaço no topo da página para que o conteúdo
-       do <main> não fique escondido atrás do header fixo.
-       Ajuste o valor 80px para a altura real do seu header. */
     padding-top: 80px; 
 }
 
 header {
     background-color: #F2541B;
     color: #0D0D0D;
-    
-    /* PROPRIEDADES DO HEADER FIXO */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000; 
-
-    /* Alinha o container que está dentro dele */
     display: flex;
     align-items: center;
+    height: 80px;
+    padding: 0 1rem; /* Adiciona um respiro nas laterais */
 }
 
-/* Regra para o container DENTRO do header */
-header .container-fluid {
+header .header-content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
 }
@@ -38,51 +32,53 @@ main {
     padding-top: 30px;
 }
 
-#logo {
-    display:flex;
-    justify-content: start;
+.logo img {
+    height: 80px; /* Controla o tamanho do logo */
+    width: auto;
 }
 
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Aumenta o espaço entre os links */
+}
 
-/* Garante que o container .entrar alinhe bem os itens */
 .entrar {
     display:flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
-    gap:15px;
+    gap: 15px;
 }
 
 .btn-entrar {
-    margin-top: 20px;
-    margin-bottom: 20px;
     background-color: #EFC978;
     color: #0D0D0D;
     font-weight: bold;
-    border: none;
-    transition: 0.3s;
+    padding: 0.5rem 1.25rem;
+    border-radius: 15px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
 }
+
 .btn-entrar:hover {
     background-color: #F2F2F2; 
     color: #F2541B; 
-    border: 2px solid #F2541B;
+    border-color: #F2541B;
     transform: translateY(-2px); 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 #user-icon {
-    max-width: 100px;
+    height: 80px;
+    width: 80px;
     border-radius: 50%;
 }
 
-.links {
-    /* Centraliza os links no espaço disponível */
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Adiciona um espaço entre os links */
-}
-
-/* Estilos globais para links */
-a, a:visited {
+a {
     color: #0D0D0D;
+    text-decoration: none;
 }
 
+a:hover {
+    color: #FFFFFF; /* Adiciona um efeito hover nos links do menu */
+}
