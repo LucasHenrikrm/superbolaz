@@ -18,16 +18,15 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%; /* Garante que ocupe 100% da largura da tela */
-    z-index: 1000; /* Garante que o header fique na frente de outros elementos */
+    width: 100%;
+    z-index: 1000; 
 
-    /* Alinhando o container que está dentro dele */
+    /* Alinha o container que está dentro dele */
     display: flex;
     align-items: center;
 }
 
 /* Regra para o container DENTRO do header */
-/* Precisamos recriar as regras de flex aqui, pois o header agora é o container flex principal */
 header .container-fluid {
     display: flex;
     justify-content: space-around;
@@ -45,26 +44,31 @@ main {
 }
 
 
+/* Garante que o container .entrar alinhe bem os itens */
 .entrar {
     display:flex;
     justify-content: end;
+    align-items: center;
     gap:15px;
 }
-#bt-entrar {
+
+.btn-entrar {
     margin-top: 20px;
     margin-bottom: 20px;
     background-color: #EFC978;
     color: #0D0D0D;
-    width: 120px;
-    border-radius: 15px;
-    text-align: center;
-    place-content: center; /* Dica: use display: grid; para place-content funcionar ou use display:flex; e align-items/justify-content */
-    display: flex; /* Adicionado para centralizar melhor o texto */
-    align-items: center;
-    justify-content: center;
-    text-decoration: none; /* Remove o sublinhado do link */
     font-weight: bold;
+    border: none;
+    transition: 0.3s;
 }
+.btn-entrar:hover {
+    background-color: #F2F2F2; 
+    color: #F2541B; 
+    border: 2px solid #F2541B;
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
 #user-icon {
     max-width: 100px;
     border-radius: 50%;

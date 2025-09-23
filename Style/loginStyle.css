@@ -1,8 +1,14 @@
-/* Estilo para a imagem do logo */
+/* Estilo para o container principal da página de login */
+#login-container {
+    /* A altura é calculada subtraindo o tamanho da barra superior*/
+    height: calc(100vh - 80px);
+}
+
+/* Estilo para a imagem do logo dentro do formulário */
 #logo {
     width: 220px;           
     height: 220px;          
-    border: 5px solid #5F9EA0;
+    border: 5px solid #EFC978;
     border-radius: 50%;    
     object-fit: cover;      
     margin-bottom: 30px; 
@@ -13,31 +19,49 @@ form {
     display: flex;
     align-items: center;
     flex-direction: column;
-    color: white;
-    background-color: black;
+    color: #F2F2F2; 
+    background-color: #0D0D0D; 
     border-radius: 20px;
-    
     width: 100%;
     max-width: 400px; 
     padding: 30px;
 }
 
+form .informacao {
+    width: 100%;
+    max-width: 250px;
+}
+
 input {
-    width: 220px;
+    width: 100%;
     height: 40px;
     border-radius: 10px;
-    border: 3px solid #5F9EA0;
+    border: 3px solid #F2541B;
+    margin-top: 5px;
 }
 
 button {
-    width: 100px;
-    height: 30px;
+    width: 110px; 
+    height: 40px; 
     border-radius: 10px;
-    color: white;
-    background-color: #5F9EA0;
-    border: 0px solid; 
+    color: #0D0D0D;
+    background-color: #EFC978;
+    border: none; 
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
 }
+
+button:hover {
+    background-color: #F2541B;
+    color: #FFFFFF;
+    transform: translateY(-2px);
+    box-shadow: 0px 5px 15px #F2541B;
+}
+
 .btn-login {
     display: flex;
     gap: 15px;
+    margin-top: 10px;
 }
