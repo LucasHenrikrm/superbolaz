@@ -1,8 +1,4 @@
 /* Estilo para o container principal da página de login */
-#login-container {
-    /* A altura é calculada subtraindo o tamanho da barra superior*/
-    height: calc(100vh - 80px);
-}
 
 /* Estilo para a imagem do logo dentro do formulário */
 #logo {
@@ -64,4 +60,5 @@ button:hover {
     display: flex;
     gap: 15px;
     margin-top: 10px;
+
 }
