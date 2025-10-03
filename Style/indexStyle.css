@@ -42,10 +42,29 @@
 
 .container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-wrap: wrap; 
+    justify-content: center; 
     column-gap: 110px;
-    row-gap: 5px;  
+    row-gap: 5px; 
+    flex-direction: row;   /*← Alteração de direção dos cards*/
+}
+
+.container-cards {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    column-gap: 110px;
+    row-gap: 5px; 
+    flex-direction: row;   /*← Foram separados duas classes diferentes; para não conflitar o carrossel com os*/
+}
+
+.container-cards2 {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    column-gap: 110px;
+    row-gap: 5px; 
+    flex-direction: row;
 }
 
 .card {
@@ -111,4 +130,3 @@
     justify-content: center;
     margin-top: 4px;
 }
-
