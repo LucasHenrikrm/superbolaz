@@ -37,8 +37,7 @@
 
 .carrossel{
     margin-top: -60px;
-    margin-left: 150px;
-    margin-right: 150px;
+    width: 980px;
 }
 
 .container {
@@ -112,3 +111,4 @@
     justify-content: center;
     margin-top: 4px;
 }
+
