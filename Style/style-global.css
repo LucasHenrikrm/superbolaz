@@ -143,4 +143,10 @@ header .header-content {
     border-radius: 50%;
 }
 
+/*Configurações do ícone do carrinho*/
+#carrinho-icon {
+    height: 40px;
+    width: 75px;
+    margin-left: -10px
+}
 
