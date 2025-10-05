@@ -57,11 +57,11 @@
 
 /*Configura cada card*/
 .card {
-    width: 270px;
-    height: 400px;
+    width: 250px;
+    height: 420px;
     border-radius: 15px;
-    margin-top: 100px;
-    background-color: #F2541B;
+    margin-top: 50px;
+    background-color: var(--cor-destaque);
     box-shadow: var(--cor-sombra) 0px 20px 30px -10px;
 }
 
@@ -76,30 +76,32 @@
     width: 190px;
     height: 200px;
     border-radius: 15px;
-    margin-top: 20px;
-    background-color: var(--branco:);
+    margin-top: 10px;
 }
 
 /*Configura a descrição do produto*/
 .card-titulo {
     text-align: center;
-    color: var(--branco:);
+    color: var(--preto);
     font-weight: 600;
     font-size: 25px;
     font-family: var(--fonte-destaque);
 }
 
 .card-descricao {
-    font-family: var(--fonte-destaque);
-    color: var(--branco:);
+    text-align: center;
+    color: var(--preto);
+    font-weight: 500;
+    font-size: 20px;
 }
+
 /*Configura o preço de cada card*/
 .card-preco {
     font-family: var(--fonte-padrao);
-    color: var(--fonte-padrao);
-    font-weight: 300;
+    color: var(--preto);
+    font-weight: 400;
     text-align: center;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 /*Configura o botão de comprar*/
@@ -129,5 +131,26 @@
     display: flex;
     justify-content: center;
     margin-top: 4px;
+}
+
+#promocao img{
+    margin-top: 50px;
+}
+
+#promocao .card {
+    width: 250px;
+    height: 500px;
+    border-radius: 15px;
+    margin-top: 50px;
+    background-color: var(--cor-destaque);
+    box-shadow: var(--cor-sombra) 0px 20px 30px -10px;
+}
+
+.card-preco-original{
+    color: darkred;
+    text-decoration: line-through;
+    font-weight: 400;
+    text-align: center;
+    font-size: 15px;
 }
 
