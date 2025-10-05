@@ -21,7 +21,16 @@ Professor Doutor Bruno Zolotareff dos Santos.
 - Michael Douglas Dantas da Silva 
 
 ---
+
+### 🖼️ Visual da tela inicial
+
+---
+
 ### ⚙️ Funcionalidades
+
+###Sistema de login:
+- Login no sistema baseado nos dados armazenados no banco de dados JSON
+
 
 ---
 ### 🔧 Tecnologias utilizadas
