@@ -111,7 +111,7 @@
 }
 
 /*Configura o hover do botão de comprar*/
-#botao-compra:hover {
+#botao-comprar:hover {
     transition: 1s;
     background-color: var(--cor-fundo);
     color: var(--cor-branco);
@@ -125,3 +125,4 @@
     justify-content: center;
     margin-top: 4px;
 }
+
