@@ -1,26 +1,18 @@
-const contas = new Map();
-contas.set('admin', 'admin123');
-
-function cadastro(usuario, senha) {
-  if (!usuario || !senha) {
-    return "Erro: Usuário e senha são obrigatórios.";
-  }
-  if (contas.has(usuario)) {
-    return "Falha: Usuário já existe.";
-  }
-  contas.set(usuario, senha);
-  return "Cadastro realizado com sucesso.";
+function login(){
+  fetch("../json/contas.json")
+  .then(response => response.json())
+  .then(contas => {
+    handleLogin(contas)
+  })
 }
 
-function login(usuario, senha) {
-  if (!contas.has(usuario)) {
-    return "Falha: Usuário não encontrado.";
+function login_validar(userTry, passTry, contas) {
+  for (const conta of contas) {
+    if (conta.user === userTry && conta.pass === passTry){
+      return true
+    }
   }
-  if (contas.get(usuario) === senha) {
-    return true;
-  } else {
     return "Falha: Senha incorreta.";
-  }
 }
 
 // Uma função dedicada apenas a limpar os campos de input.
@@ -29,24 +21,13 @@ function limparCampos() {
     document.getElementById('senha').value = '';
 }
 
-function handleCadastro() {
-  const usuarioInput = document.getElementById('usuario').value;
-  const senhaInput = document.getElementById('senha').value;
-  const mensagem = cadastro(usuarioInput, senhaInput);
-  
-  alert(mensagem);
-
-  // Limpa os campos após exibir o alerta de cadastro.
-  limparCampos();
-}
-
-function handleLogin() {
-  const usuarioInput = document.getElementById('usuario').value;
-  const senhaInput = document.getElementById('senha').value;
-  const resultado = login(usuarioInput, senhaInput);
+function handleLogin(contas) {
+  const userTry = document.getElementById('usuario').value;
+  const passTry = document.getElementById('senha').value;
+  const resultado = login_validar(userTry, passTry, contas);
 
   if (resultado === true) {
-    window.location.href = '../Public/index.html';
+    window.location.href = '../index.html';
   } else {
     alert(resultado);
     

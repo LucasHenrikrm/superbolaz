@@ -31,14 +31,16 @@
                 <!-- Aqui é os links da barra de navegação -->
                   <ul class="nav-bar"> <!-- nav bar seria o geral -->
                   <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li> <!--nav item seria o "botao", e nav link cada link clicavel -->
-                  <li class="nav-item"><a class="nav-link" href="#promocao">Promoções</a></li>
+                  <!-- <li class="nav-item"><a class="nav-link" href="#promocao">Promoções</a></li> <!--Este link direciona para a div com o id chamado de "Promoção" dentro da própria index -->
                   <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre nós</a></li>
+                  <li class="nav-item"><a class="nav-link" href="cadastrar.html">Cadastrar</a></li>
                   </ul>
             </div>
             
             <div class="entrar">
                 <a href="login-pag.html" class="btn btn-entrar">Entrar</a>
                 <img src="../img/user-icon.png" alt="Ícone de usuário" id="user-icon">
+                
             </div>
 
         </div> 
@@ -56,8 +58,7 @@
                         <input type="password" id="senha" name="senha" required><br><br>
                     </div>
                     <div class="btn-login">
-                        <button type="button" onclick="handleCadastro()">Cadastrar</button>
-                        <button type="button" onclick="handleLogin()">Login</button>
+                        <button type="button" onclick="login()">Login</button>
                     </div>
                 </form>
             </div>
