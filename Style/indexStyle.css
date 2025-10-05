@@ -34,20 +34,28 @@
     --fonte-destaque: "Horizon", "Verdana", "sans-serif";
 }
 
+.container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; /*Centraliza o carrossel*/
+}
 
 .carrossel{
     margin-top: -60px;
     width: 980px;
 }
 
-.container {
+/*Configura cada linha cards*/
+.linha-cards {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-wrap: wrap; 
+    justify-content: center; 
     column-gap: 110px;
-    row-gap: 5px;  
+    row-gap: 5px; 
+    flex-direction: row; /*Altera a direção dos cards*/
 }
 
+/*Configura cada card*/
 .card {
     width: 250px;
     height: 390px;
@@ -57,11 +65,13 @@
     box-shadow: var(--cor-sombra) 0px 20px 30px -10px;
 }
 
+/*Configura a posição das fotos de cada card*/
 .card-imagem {
     display: flex;
     justify-content: center;
 }
 
+/*Configura a tag img das imagens de cada card*/
 .card-foto {
     width: 190px;
     height: 200px;
@@ -69,6 +79,7 @@
     margin-top: 20px;
 }
 
+/*Configura a descrição do produto*/
 .card-titulo {
     text-align: center;
     color: var(--cor-branco);
@@ -77,15 +88,17 @@
     font-family: var(--fonte-destaque);
 }
 
-.card-descricao {
+/*Configura o preço de cada card*/
+.card-preco {
     font-family: var(--fonte-padrao);
     color: var(--fonte-padrao);
     font-weight: 300;
     text-align: center;
     font-size: 15px;
 }
-/*
-.btn {
+
+/*Configura o botão de comprar*/
+#botao-comprar {
     padding: 10px 30px;
     font-family: var(--fonte-destaque);
     font-size: 15px;
@@ -97,18 +110,18 @@
     color: white;
 }
 
-.btn:hover {
+/*Configura o hover do botão de comprar*/
+#botao-compra:hover {
     transition: 1s;
     background-color: var(--cor-fundo);
     color: var(--cor-branco);
     cursor: pointer;
 
 }
-    */
 
+/*Configura a posição do botão em relação aos outros elementos do card*/
 .card-botao {
     display: flex;
     justify-content: center;
     margin-top: 4px;
 }
-
