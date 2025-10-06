@@ -77,7 +77,6 @@
     height: 200px;
     border-radius: 15px;
     margin-top: 10px;
-    background-color: #F2F2F2;
 }
 
 /*Configura a descrição do produto*/
@@ -155,3 +154,162 @@
     font-size: 15px;
 }
 
+
+
+
+/* PRODUTOS POR CATEGORIA - CONTAINER */
+.produtos-categoria-container {
+    background-color: #0e1a49; 
+    border-radius: 12px;
+    padding: 28px 26px;
+    margin: 26px auto;
+    max-width: 1160px;
+    width: calc(100% - 48px);
+    box-shadow: 0 10px 30px rgba(2,6,23,0.45);
+    color: var(--branco);
+}
+
+.produtos-categoria-inner { max-width: 1120px; margin: 0 auto; }
+
+.titulo-catalogo {
+    text-align: center;
+    color: var(--cor-detalhe);
+    margin-bottom: 18px;
+    font-family: var(--fonte-destaque);
+    font-size: 22px;
+    letter-spacing: 0.6px;
+}
+
+/* header de categoria */
+.categoria-header {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin: 10px 6px 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+
+.categoria-title {
+    color: var(--cor-destaque);
+    font-weight:800;
+    text-transform:uppercase;
+    font-family:var(--fonte-destaque);
+    font-size:15px;
+    padding:6px 10px;
+    border-radius:8px;
+    background: transparent;
+}
+
+.categoria-link {
+    color: var(--branco);
+    background: rgba(239,201,120,0.07);
+    padding:6px 10px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:700;
+    font-size:13px;
+}
+
+/* alinhamento: 3 cards por linha, mantendo o .card original */
+.produtos-categoria-container .linha-cards {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap: 28px 46px;
+    align-items:stretch;
+}
+
+.produtos-categoria-container .linha-cards .card {
+    width: 250px; /* mantém o padrão do projeto */
+    margin-top: 0;
+}
+
+@media (max-width: 880px) {
+    .produtos-categoria-container { padding: 18px; max-width: 720px; width: calc(100% - 36px); }
+    .produtos-categoria-container .linha-cards { justify-content:center; gap:18px; }
+    .produtos-categoria-container .linha-cards .card { width: 180px; }
+    .categoria-header { flex-direction:column; align-items:flex-start; gap:8px; }
+}
+
+.produtos-categoria-container .card-texto {
+  display: flex !important;
+  flex-direction: column !important;
+  flex: 1 1 auto !important;
+  padding-bottom: 8px;
+}
+
+.produtos-categoria-container .card-botao {
+  margin-top: auto !important;
+  padding-bottom: 8px !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+/* Garantir largura consistente do botão */
+.produtos-categoria-container .card-botao .btn {
+  min-width: 110px !important;
+  max-width: 140px !important;
+}
+
+
+
+/* tentando colocar botão COMPRAR dentro do card laranja */
+.produtos-categoria-container .card {
+  position: relative !important;  /* torna o card referência para posicionamento absoluto do botão */
+  display: block !important;
+  padding-bottom: 40px !important; /* espaço para o botão dentro do card */
+  box-sizing: border-box !important;
+  overflow: visible !important;
+}
+
+/* Garantir que a área de texto ocupe espaço acima do botão */
+.produtos-categoria-container .card-texto {
+  margin-bottom: 0 !important;
+  padding-bottom: 8px !important;
+}
+
+/* Botão posicionado ao fundo do card, centralizado */
+.produtos-categoria-container .card-botao {
+  position: absolute !important;
+  bottom: 12px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: auto !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+/* Ajuste do botão para caber no card e manter aparência */
+.produtos-categoria-container .card-botao .btn {
+  min-width: 110px !important;
+  padding: 8px 12px !important;
+  border-radius: 8px !important;
+}
+
+/* Em telas menores garantir que botão não extrapole */
+@media (max-width: 880px) {
+  .produtos-categoria-container .card { padding-bottom: 56px !important; }
+  .produtos-categoria-container .card-botao { bottom: 10px !important; }
+}
+
+
+/* evitar quebra da palavra COMPRAR no botão */
+.produtos-categoria-container .card-botao .btn,
+.produtos-categoria-container .card-botao button {
+  white-space: nowrap !important;
+  line-height: 1 !important;
+  padding: 10px 14px !important;
+  font-size: 14px !important;
+  display: inline-block !important;
+  text-align: center !important;
+}
+
+/* Garantir botão centralizado e sem quebra */
+.produtos-categoria-container .card-botao {
+  bottom: 12px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: auto !important;
+  max-width: 90% !important;
+  box-sizing: border-box !important;
+}
