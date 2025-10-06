@@ -23,7 +23,7 @@ Professor Doutor Bruno Zolotareff dos Santos.
 ---
 
 ### 🖼️ Visual da tela inicial
-<img width="1919" height="1001" alt="image" src="https://github.com/user-attachments/assets/25d1cda7-ccf2-4436-8ef3-75277455e8c1" />
+<img width="1919" height="1000" alt="image" src="https://github.com/user-attachments/assets/57c1d7c4-9e73-4f96-ab2f-52badab8352a" />
 
 ---
 
