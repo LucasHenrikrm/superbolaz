@@ -84,6 +84,7 @@ header .header-content {
     border-radius: 10px;
     padding: 10px; 
     justify-content: center;
+    width: 160px;
 }
 
 /*Configurações dos itens do menu ao se passar o mouse*/
