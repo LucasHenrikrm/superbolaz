@@ -43,6 +43,11 @@
 .carrossel{
     margin-top: -60px;
     width: 980px;
+    border-radius: 18px;
+}
+/* Bordas arredondadas para imagens do carrossel */
+.carousel-inner img {
+    border-radius: 18px;
 }
 
 /*Configura cada linha cards*/
