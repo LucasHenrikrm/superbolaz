@@ -67,7 +67,7 @@
     border-radius: 15px;
     margin-top: 50px;
     background-color: var(--cor-destaque);
-    box-shadow: var(--cor-sombra) 0px 20px 30px -10px;
+    box-shadow: var(--preto) 0px 20px 30px -10px;
 }
 
 /*Configura a posição das fotos de cada card*/
@@ -311,3 +311,4 @@
   max-width: 90% !important;
   box-sizing: border-box !important;
 }
+
