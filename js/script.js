@@ -33,5 +33,6 @@ function handleLogin(contas) {
     
     // Limpa os campos apenas se o login falhar.
     limparCampos();
+    
   }
 }
