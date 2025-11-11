@@ -1,0 +1,21 @@
+[
+    {"id": 1, "nome": "Funko Goku Saiyajin",  "preco": 80.00, "imagem": "../img/funkos/goku sayajim.webp"
+    },
+    {"id": 2, "nome": "Funko Vegeta",  "preco": 80.00, "imagem": "https://via.placeholder.com/300x300"
+    },
+    {"id": 3, "nome": "Funko Gogeta", "preco": 80.00, "imagem": "https://via.placeholder.com/300x300"
+    },
+    {"id": 4, "nome": "Caneca Misto", "preco": 50.00, "imagem": "https://via.placeholder.com/300x300"
+    },
+    {"id": 5, "nome": "Caneca Goku Blue", "preco": 50.00, "imagem": "https://via.placeholder.com/300x300"
+    },
+    {"id": 6, "nome": "Goku",   "preco": 50.00, "imagem": "https://via.placeholder.com/300x300"
+    },
+    {"id": 7, "nome": "Camiseta Goku Blue", "preco": 60.00, "imagem": "https://via.placeholder.com/300x300"
+    },
+    {"id": 8, "nome": "Camiseta Goku Black", "preco": 60.00, "imagem": "https://via.placeholder.com/300x300"
+    },
+    {"id": 9, "nome": "Camiseta Goten Saiyajin", "preco": 60.00, "imagem": "https://via.placeholder.com/300x300"
+    }
+
+]
