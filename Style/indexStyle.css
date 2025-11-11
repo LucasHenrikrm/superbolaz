@@ -112,7 +112,7 @@
 }
 
 /*Configura o botão de comprar*/
-#botao-comprar {
+.botao-comprar {
     padding: 10px 30px;
     font-family: var(--fonte-destaque);
     font-size: 15px;
@@ -125,7 +125,7 @@
 }
 
 /*Configura o hover do botão de comprar*/
-#botao-comprar:hover {
+.botao-comprar:hover {
     transition: 1s;
     background-color: var(--cor-fundo);
     color: var(--branco);

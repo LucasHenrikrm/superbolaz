@@ -1,0 +1,95 @@
+/* Arquivo CSS para estilizar a página index.html*/
+
+/*Configura os caracteres para UTF-8*/
+@charset "UTF-8";
+
+/*Importa fontes especiais*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@font-face {
+    font-family: 'Horizon';
+    src: url('../fonts/Horizon.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Reseta todos os parâmetros pré-definidos de todos os navegadores*/
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/*Variáveis dos recursos da página*/
+:root {
+    /*Cores*/
+    --cor-fundo: #10276F;
+    --cor-destaque: #F2541B;
+    --cor-detalhe: #EFC978;
+    --preto: #0D0D0D;
+    --branco: #F2F2F2;
+
+    /*Fontes*/
+    --fonte-padrao: "Open Sans", Verdana, sans-serif;
+    --fonte-destaque: "Horizon", "Verdana", "sans-serif";
+}
+
+#carrinho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0e1a49; 
+    border-radius: 12px;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    margin: 26px auto;
+    max-width: 1160px;
+    width: calc(100% - 48px);
+    box-shadow: 0 10px 30px rgba(2,6,23,0.45);
+    color: var(--branco);
+}
+
+#titulo-carrinho {
+    color: var(--cor-detalhe);
+    font-family: var(--fonte-destaque);
+    font-size: 22px;
+    letter-spacing: 0.6px;
+    margin-left: -30px;
+}
+
+#carrinho-icone {
+    height: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 70px;
+
+}
+
+#botao-voltar {
+    background-color: var(--cor-detalhe);
+    color: var(--preto); /*@Leo Sugestão: mudar as cores do botão para deixar todos os textos do menu com a cor branca*/
+    font-weight: bold;
+    padding: 0.5rem 1.25rem;
+    border-radius: 15px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease-in-out; /*Aqui cria-se uma animação*/
+    margin-left: 70px;
+    margin-top: 10px;
+
+}
+
+#botao-voltar:hover {
+    background-color: var(--branco); 
+    color: var(--cor-destaque); 
+    border-color: var(--cor-destaque);
+    transform: translateY(-2px); /*Aqui cria-se uma animação que faz o botão subir*/
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#botoes {
+    margin-top: 30px;
+}
+
+#itens-carrinho {
+    margin-top: 30px;
+}
