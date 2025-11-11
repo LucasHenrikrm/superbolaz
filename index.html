@@ -34,7 +34,6 @@
                 <!-- Aqui é os links da barra de navegação / O menu -->
                   <ul class="nav-bar"> <!-- nav bar seria as configurações gerais do menu -->
                   <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li> <!--nav item seria o "botão", e nav link cada link clicável -->
-                  <!-- <li class="nav-item"><a class="nav-link" href="#promocao">Promoções</a></li> <!--Este link direciona para a div com o id chamado de "Promoção" dentro da própria index -->
                   <li class="nav-item"><a class="nav-link" href="Public/sobre.html">Sobre nós</a></li>
                   <li class="nav-item"><a class="nav-link" href="Public/cadastrar.html">Cadastrar</a></li>
                   </ul>
@@ -44,7 +43,7 @@
             <div class="entrar">
                 <a href="Public/login-pag.html" class="btn btn-entrar">Entrar</a>
                 <img src="img/user-icon.png" alt="Ícone de usuário" id="user-icon">
-                <a href=""><img src="img/CarrinhoIcon.png" alt="Carrinho de Compras" id="carrinho-icon"></a>
+                <a href="Public/carrinho.html"><img src="img/CarrinhoIcon.png" alt="Carrinho de Compras" id="carrinho-icon"></a>
             </div>
 
         </div> 
@@ -101,7 +100,7 @@
                     <!--Linha 1-->
                     <div class="linha-cards">
                         <!--Card 1-->
-                        <div class="card">
+                        <div class="card" data-id="1">
                             <!--Configura a imagem do card-->
                             <div class="card-imagem">
                                 <img class="card-foto" src="img/funkos/goku sayajim.webp" alt="Funko - Goku Saiyajin">
@@ -114,11 +113,11 @@
                             </div>
                             <!--Configura o botão do card-->
                             <div class="card-botao">
-                                <button type="button" class="btn" id="botao-comprar">Comprar</button>
+                                <button type="button" class="btn botao-comprar" data-produto-id="1">Comprar</button>
                             </div>
                         </div>
                         <!--Card 2-->
-                        <div class="card">
+                        <div class="card" data-id="2">
                             <!--Configura a imagem do card-->
                             <div class="card-imagem">
                                 <img class="card-foto" src="img/funkos/vegeta.webp" alt="Funko - Vegeta">
@@ -131,11 +130,11 @@
                             </div>
                             <!--Configura o botão do card-->
                             <div class="card-botao">
-                                <button type="button" class="btn" id="botao-comprar">Comprar</button>
+                                <button type="button" class="btn botao-comprar" data-produto-id="2">Comprar</button>
                             </div>
                         </div>
                         <!--Card 3-->
-                        <div class="card">
+                        <div class="card" data-id="3">
                             <!--Configura a imagem do card-->
                             <div class="card-imagem">
                                 <img class="card-foto" src="img/funkos/gogeta.webp" alt="Funko - Gogeta">
@@ -147,8 +146,8 @@
                                 <p class="card-preco">R$ 80,00</p>
                             </div>
                             <!--Configura o botão do card-->
-                            <div class="card-botao">
-                                <button type="button" class="btn" id="botao-comprar">Comprar</button>
+                            <div class="card-botao" >
+                                <button type="button" class="btn botao-comprar" data-produto-id="3">Comprar</button>
                             </div>
                         </div>
                     </div>
@@ -162,7 +161,7 @@
                     <!--Linha 2-->
                     <div class="linha-cards">
                         <!--Card 1-->
-                        <div class="card">
+                        <div class="card" data-id="4">
                             <!--Configura a imagem do card-->
                             <div class="card-imagem">
                                 <img class="card-foto" src="img/canecas/gokus.jpg" alt="Caneca - vários Gokus">
@@ -175,11 +174,11 @@
                             </div>
                             <!--Configura o botão do card-->
                             <div class="card-botao">
-                                <button type="button" class="btn" id="botao-comprar">Comprar</button>
+                                <button type="button" class="btn botao-comprar" data-produto-id="4">Comprar</button>
                             </div>
                         </div>
                         <!--Card 2-->
-                        <div class="card">
+                        <div class="card" data-id="5">
                             <!--Configura a imagem do card-->
                             <div class="card-imagem">
                                 <img class="card-foto" src="img/canecas/saiajin blue.webp" alt="Caneca - Goku Blue">
@@ -192,11 +191,11 @@
                             </div>
                             <!--Configura o botão do card-->
                             <div class="card-botao">
-                                <button type="button" class="btn" id="botao-comprar">Comprar</button>
+                                <button type="button" class="btn botao-comprar" data-produto-id="5">Comprar</button>
                             </div>
                         </div>
                         <!--Card 3-->
-                        <div class="card">
+                        <div class="card" data-id="6">
                             <!--Configura a imagem do card-->
                             <div class="card-imagem">
                                 <img class="card-foto" src="img/canecas/goku 2.webp" alt="Caneca - Goku">
@@ -209,7 +208,7 @@
                             </div>
                             <!--Configura o botão do card-->
                             <div class="card-botao">
-                                <button type="button" class="btn" id="botao-comprar">Comprar</button>
+                                <button type="button" class="btn botao-comprar" data-produto-id="6">Comprar</button>
                             </div>
                         </div>
                     </div>
@@ -230,7 +229,7 @@
                     <!--Aqui jaz as promoções-->
                     <div class="linha-cards" id="promocoes">
                         <!--Card 1-->
-                        <div class="card">
+                        <div class="card" data-id="7">
                             <!--Configura a imagem do card-->
                             <div class="card-imagem">
                                 <img class="card-foto" src="img/camiseta/goku blue.webp" alt="Camiseta - Goku Blue">
@@ -244,12 +243,12 @@
                             </div>
                             <!--Configura o botão do card-->
                             <div class="card-botao">
-                                <button type="button" class="btn" id="botao-comprar">Comprar</button>
+                                <button type="button" class="btn botao-comprar" data-produto-id="7">Comprar</button>
                             </div>
                         </div>
                         <!--Card 2-->
                         
-                        <div class="card" id="cardpromocao">
+                        <div class="card" id="cardpromocao" data-id="8">
                             <!--Configura a imagem do card-->
                             <div class="card-imagem">
                                 <img class="card-foto" src="img/camiseta/goku black 2.webp" alt="Camiseta - Goku Black">
@@ -263,12 +262,12 @@
                             </div>
                             <!--Configura o botão do card-->
                             <div class="card-botao">
-                                <button type="button" class="btn" id="botao-comprar">Comprar</button>
+                                <button type="button" class="btn botao-comprar" data-produto-id="8">Comprar</button>
                             </div>
                         </div>
                         </id>
                         <!--Card 3-->
-                        <div class="card">
+                        <div class="card" data-id="9">
                             <!--Configura a imagem do card-->
                             <div class="card-imagem">
                                 <img class="card-foto" src="img/camiseta/goten saiajin.webp" alt="Camiseta - Goten Saiyajin">
@@ -283,7 +282,7 @@
                             </div>
                             <!--Configura o botão do card-->
                             <div class="card-botao">
-                                <button type="button" class="btn" id="botao-comprar">Comprar</button>
+                                <button type="button" class="btn botao-comprar" data-produto-id="9">Comprar</button>
                             </div>
                         </div>
                     </div>
@@ -331,7 +330,8 @@
 
     <!-- | ↓ Importando Bootstrap - Funcionalidades ↓ | -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/carrinhoScript.js"></script>
 </body>
 
 </html>
