@@ -199,7 +199,7 @@ function verificarLogin1(){
             confirmButtonColor: "#F2541B"
             }).then((result) => {
                 // Redireciona quando o usuário clicar em OK
-                window.location.href = "login-pag.html";
+                window.location.href = "https://lucashenrikrm.github.io/superbolaz/Public/login-pag.html";
             });
             ;
         }
@@ -230,4 +230,5 @@ function logout(){
 
 
 verificarLogin();
+
 document.addEventListener('DOMContentLoaded', verificarLogin);
