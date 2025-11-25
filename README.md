@@ -31,7 +31,7 @@ Professor Doutor Bruno Zolotareff dos Santos.
 
 ### Sistema de login:
 - Login no sistema baseado nos dados armazenados no banco de dados JSON
-
+- CRUD no carrinho
 
 ---
 ### 🔧 Tecnologias utilizadas
